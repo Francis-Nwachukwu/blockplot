@@ -59,7 +59,7 @@ Sidebar
 .close-btn {
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 0rem;
   font-size: 3rem;
   background: transparent;
   border: none;

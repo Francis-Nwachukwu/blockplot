@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { useGlobalContext } from "../../context";
@@ -23,7 +22,9 @@ const Sidebar = () => {
             const { id, url, text } = link;
             return (
               <li key={id}>
-                <a href={url}>{text}</a>
+                <Link reloadDocument to={url}>
+                  {text}
+                </Link>
               </li>
             );
           })}
