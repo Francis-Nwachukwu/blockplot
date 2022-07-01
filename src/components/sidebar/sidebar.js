@@ -22,9 +22,7 @@ const Sidebar = () => {
             const { id, url, text } = link;
             return (
               <li key={id}>
-                <Link reloadDocument to={url}>
-                  {text}
-                </Link>
+                <a href={url}>{text}</a>
               </li>
             );
           })}
