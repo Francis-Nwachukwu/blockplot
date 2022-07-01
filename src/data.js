@@ -22,7 +22,7 @@ export const links = [
   },
   {
     id: 3,
-    url: "/properties",
+    url: "/",
     text: "properties",
     icon: <FaFolderOpen />,
   },

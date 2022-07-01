@@ -13,14 +13,20 @@ ul {
   display: none;
 }
 .nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
   background: white;
-  height: 5rem;
+  /* height: 5rem; */
   display: grid !important;
   -webkit-box-align: center;
   align-items: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  padding: 1rem;
+  padding: 1rem 1.5rem !important;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .nav-center {
   width: 100%;
@@ -52,6 +58,7 @@ ul {
   border-color: transparent;
   font-size: 2rem;
   cursor: pointer;
+  color: black;
   /* show later */
   justify-self: right;
 }

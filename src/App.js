@@ -5,20 +5,20 @@ import Footer from "./components/footer/footer";
 
 import Home from "./routes/home";
 import About from "./routes/about";
-import Properties from "./routes/properties";
 import ErrorPage from "./routes/error";
 import Learn from "./routes/learn";
+import Sidebar from "./components/sidebar/sidebar";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navigation />
+      <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/properties" element={<Properties />} />
-        <Route path="*" element={<ErrorPage />} />
         <Route path="/learn" element={<Learn />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </div>

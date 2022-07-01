@@ -47,6 +47,9 @@ Hero
 ===============
 */
 /* underline in globals */
+.hero {
+  background: rgba(255, 166, 0, 0.045);
+}
 .hero-info h1 {
   font-size: 3rem;
   color: hsl(211, 39%, 23%);
@@ -106,19 +109,18 @@ About
 }
 .about-title .underline {
   margin-left: auto;
-}
-.about-title {
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
 }
 .about-center {
+  padding: 10px 0;
   display: grid;
-  gap: 3rem 2rem;
-}
-.about-img {
-  justify-self: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.5rem 2rem;
+  margin-bottom: 10px;
 }
 .about-info {
   align-self: center;
+  /* width: 300px; */
 }
 .about-info p {
   text-align: center;
@@ -130,4 +132,124 @@ About
   .about-info {
     align-self: center;
   }
+}
+.blog {
+  padding: 20px 0;
+  background: rgba(255, 166, 0, 0.045);
+}
+.blog-center {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+}
+@media screen and (max-width: 760px) {
+  .blog-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem 2rem;
+  }
+}
+.blog-title {
+  text-align: center;
+}
+.blog-title p {
+  font-weight: lighter;
+}
+.card {
+  background-color: rgba(255, 166, 0, 0.271) !important;
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  height: 14rem;
+  border-radius: 10px !important;
+  padding: 10px;
+  margin: 10px 0;
+}
+.card-front {
+  text-align: center;
+  line-height: 1.5rem;
+}
+.connect {
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+}
+.image-container {
+  position: absolute;
+  background-image: url("../public/crypto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -2;
+}
+/* .connect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-white);
+  opacity: 0.7;
+  z-index: -1;
+} */
+.connect {
+  display: grid;
+  place-items: center;
+}
+.image-banner .section-title {
+  margin-bottom: 2rem;
+}
+.image-text {
+  max-width: 30rem;
+}
+.image-banner {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* add clip path */
+.connect {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 10%,
+    100% 90%,
+    50% 100%,
+    0 90%,
+    0 10%
+  );
+  clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
+/*
+=============== 
+Single Page
+===============
+*/
+.single-page {
+  padding-top: 7rem;
+  background: rgba(255, 166, 0, 0.045);
+  min-height: calc(100vh - 5rem - 198px);
+}
+.single-page .section-title {
+  text-align: center;
+}
+.page-info {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  max-width: 700px;
+  /* background: var(--clr-pink-5); */
+}
+.page-info p {
+  color: black;
 }

@@ -1,22 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import "./navigation.css";
-import { useState } from "react";
-import { FaTimes, FaBars } from "react-icons/fa";
+import { useGlobalContext } from "../../context";
+import { FaBars } from "react-icons/fa";
 
-import { links, social } from "../../data";
+import { links } from "../../data";
 
 const Navigation = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const { openSidebar } = useGlobalContext();
 
-  const openSidebar = () => {
-    setIsSidebarOpen(true);
-  };
-  const closeSidebar = () => {
-    setIsSidebarOpen(false);
-  };
   return (
     <>
-      <nav className="nav navbar-fixed" id="nav">
+      <nav className="nav" id="nav">
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">
@@ -41,7 +35,7 @@ const Navigation = () => {
         </div>
       </nav>
 
-      <aside
+      {/* <aside
         className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
         id="sidebar"
       >
@@ -70,7 +64,8 @@ const Navigation = () => {
             })}
           </ul>
         </div>
-      </aside>
+      </aside> */}
+      <Outlet />
     </>
   );
 };
