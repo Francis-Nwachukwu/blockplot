@@ -27,45 +27,50 @@ const Home = () => {
       <section className="section about">
         <div className="section-center about-center">
           <article className="about-info">
-            <div className="section-title about-title">
-              <h2>Cost of Entry</h2>
-              <div className="underline"></div>
+            <div className="card">
+              <div className="card-side card-front">
+                <h2>Cost of Entry</h2>
+                <p>
+                  Get the chance to co-own fractions of real estate properties
+                  by investing a minimum of 100USDT.
+                </p>
+              </div>
             </div>
-            <p>
-              Get the chance to co-own fractions of real estate properties by
-              investing a minimum of 100USDT.
-            </p>
           </article>
           <article className="about-info">
-            <div className="section-title about-title">
-              <h2>Property Appreciation</h2>
-              <div className="underline"></div>
+            <div className="card">
+              <div className="card-side card-front">
+                <h2>Property Appreciation</h2>
+                <p>
+                  Earn our asset backed tokens in value as property appreciates
+                  year-on-year.
+                </p>
+              </div>
             </div>
-            <p>
-              Earn our asset backed tokens in value as property appreciates
-              year-on-year.
-            </p>
           </article>
           <article className="about-info">
-            <div className="section-title about-title">
-              <h2>Rental Income</h2>
-              <div className="underline"></div>
+            <div className="card">
+              <div className="card-side card-front">
+                <h2>Rental Income</h2>
+                <p>
+                  Earn rental income and withdraw/sell off whenever you want to.
+                </p>
+              </div>
             </div>
-            <p>
-              Earn rental income and withdraw/sell off whenever you want to.
-            </p>
           </article>
           <article className="about-info">
-            <div className="section-title about-title">
-              <h2>Decentralized Governance</h2>
-              <div className="underline"></div>
+            <div className="card">
+              <div className="card-side card-front">
+                <h2>Decentralized Governance</h2>
+                <p>
+                  Token holders vote on property decisions through our
+                  governance system. Decisions range from rental increment to
+                  repair requests and more. The majority, 51%, decide on what
+                  should be done & relayed to the property management for
+                  execution.
+                </p>
+              </div>
             </div>
-            <p>
-              Token holders vote on property decisions through our governance
-              system. Decisions range from rental increment to repair requests
-              and more. The majority, 51%, decide on what should be done &
-              relayed to the property management for execution.
-            </p>
           </article>
         </div>
       </section>
