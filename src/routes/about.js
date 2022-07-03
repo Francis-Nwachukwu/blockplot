@@ -1,4 +1,5 @@
 import "../App.css";
+
 const About = () => {
   return (
     <section className="section single-page">

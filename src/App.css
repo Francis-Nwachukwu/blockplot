@@ -253,3 +253,53 @@ Single Page
 .page-info p {
   color: black;
 }
+.team {
+  margin-bottom: 20px;
+}
+.team-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.team_card {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  height: 32rem;
+  width: 360px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.team_card-side {
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: var(--radius);
+}
+.team_card-front {
+  background-color: rgba(255, 166, 0, 0.271) !important;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.team_card-front img {
+  width: 100%;
+  height: 25rem;
+  /* -o-object-fit: cover;
+  object-fit: cover; */
+  border: 1px solid transparent;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.team_card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+}

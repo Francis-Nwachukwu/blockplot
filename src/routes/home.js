@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { social } from "../data";
+import founderImg from "../assets/Founder img.jpg";
 import "../App.css";
 
 const Home = () => {
@@ -10,22 +10,16 @@ const Home = () => {
           <article className="hero-info">
             <div className="underline"></div>
             <h1>BLOCKPLOT</h1>
-            <h4>Decentralized fractional real estate investment</h4>
+            <h4>Tokenized real estate investment</h4>
+            <p>
+              Blockplot is a decentralized real estate investment platform that
+              lets you co-own real estate assets by investing your fiat/tokens
+              into tokenized real estate properties. You earn yields from rents
+              and property appreciation.
+            </p>
             <Link to="/about" className="btn hero-btn">
               About Us
             </Link>
-            <ul className="social-icons hero-icons">
-              {social.map((link) => {
-                const { id, url, icon } = link;
-                return (
-                  <li key={id}>
-                    <a className="social-icon" href={url}>
-                      {icon}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
           </article>
         </div>
       </header>
@@ -114,11 +108,6 @@ const Home = () => {
         </div>
       </section>
       <section className="connect">
-        {/* <img
-          src="../../public/crypto.jpg"
-          alt="crypto img"
-          className="image-container"
-        /> */}
         <div className="image-container"></div>
         <div className="image-banner">
           <div className="section-title">
@@ -138,6 +127,24 @@ const Home = () => {
             with owning property. Blockplot makes it easier we set up the LLC,
             co-ownership legal agreement, and business banking account for you.
           </p>
+        </div>
+      </section>
+
+      <section className="team">
+        <div className="section-title blog-title">
+          <h1>Meet Our Team</h1>
+          <div className="underline"></div>
+        </div>
+        <div className="section-center team-center">
+          <div className="team_card">
+            <div className="team_card-side team_card-front">
+              <img src={founderImg} alt="Founder" />
+              <div className="team_card-info">
+                <h2>Nwachukwu Nonso</h2>
+                <h4>Founder & CEO</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
