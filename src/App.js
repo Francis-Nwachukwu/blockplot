@@ -7,6 +7,7 @@ import Home from "./routes/home";
 import About from "./routes/about";
 import ErrorPage from "./routes/error";
 import Learn from "./routes/learn";
+import PropertyPage from "./routes/properties";
 import Sidebar from "./components/sidebar/sidebar";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/learn" element={<Learn />} />
+          <Route path="/properties" element={<PropertyPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
 

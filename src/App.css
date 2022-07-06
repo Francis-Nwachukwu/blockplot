@@ -50,44 +50,13 @@ Hero
 .hero {
   background: rgba(255, 166, 0, 0.045);
 }
-.hero-info h1 {
-  font-size: 3rem;
-  color: hsl(211, 39%, 23%);
-  font-weight: bolder;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-}
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
 .hero .underline {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
 
 .hero-center {
-  /* min-height: calc(100vh - 5rem); */
-  min-height: 100vh;
+  min-height: calc(50vh - 5rem);
   display: grid;
   -webkit-box-align: center;
   align-items: center;

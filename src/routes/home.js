@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import founderImg from "../assets/Founder img.jpg";
 import "../App.css";
 
 const Home = () => {
@@ -9,8 +8,7 @@ const Home = () => {
         <div className="section-center hero-center">
           <article className="hero-info">
             <div className="underline"></div>
-            <h1>BLOCKPLOT</h1>
-            <h4>Tokenized real estate investment</h4>
+            <h2>Tokenized real estate investment</h2>
             <p>
               Blockplot is a decentralized real estate investment platform that
               lets you co-own real estate assets by investing your fiat/tokens
@@ -132,24 +130,6 @@ const Home = () => {
             with owning property. Blockplot makes it easier we set up the LLC,
             co-ownership legal agreement, and business banking account for you.
           </p>
-        </div>
-      </section>
-
-      <section className="team">
-        <div className="section-title blog-title">
-          <h1>Meet Our Team</h1>
-          <div className="underline"></div>
-        </div>
-        <div className="section-center team-center">
-          <div className="team_card">
-            <div className="team_card-side team_card-front">
-              <img src={founderImg} alt="Founder" />
-              <div className="team_card-info">
-                <h2>Nwachukwu Nonso</h2>
-                <h4>Founder & CEO</h4>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>

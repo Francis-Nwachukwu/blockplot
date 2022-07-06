@@ -22,7 +22,7 @@ export const links = [
   },
   {
     id: 3,
-    url: "/",
+    url: "/properties",
     text: "properties",
     icon: <FaFolderOpen />,
   },
@@ -34,12 +34,7 @@ export const links = [
   {
     id: 5,
     url: "/",
-    text: "Login",
-  },
-  {
-    id: 6,
-    url: "/",
-    text: "SignUp",
+    text: "Login|SignUp",
   },
 ];
 
