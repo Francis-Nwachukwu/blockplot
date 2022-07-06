@@ -6,6 +6,7 @@ const Home = () => {
     <div>
       <header className="hero">
         <div className="section-center hero-center">
+          <div className="hero-container"></div>
           <article className="hero-info">
             <div className="underline"></div>
             <h2>Tokenized real estate investment</h2>

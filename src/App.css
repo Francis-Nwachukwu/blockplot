@@ -50,6 +50,21 @@ Hero
 .hero {
   background: rgba(255, 166, 0, 0.045);
 }
+.hero-container {
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -2;
+  background-image: url("./assets/Particle-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hero .underline {
   margin-bottom: 0.5rem;
   margin-left: 0;
@@ -61,6 +76,7 @@ Hero
   -webkit-box-align: center;
   align-items: center;
   justify-items: center;
+  position: relative;
 }
 .hero-btn {
   margin-top: 1.25rem;
