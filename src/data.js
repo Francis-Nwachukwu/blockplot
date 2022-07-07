@@ -33,7 +33,7 @@ export const links = [
   },
   {
     id: 5,
-    url: "/",
+    url: "/auth",
     text: "Login|SignUp",
   },
 ];
