@@ -26,7 +26,7 @@ const Home = () => {
       <section className="section about">
         <div className="section-center about-center">
           <article className="about-info">
-            <div className="card">
+            <div>
               <div className="card-side card-front">
                 <h2>Cost of Entry</h2>
                 <p>
@@ -37,7 +37,7 @@ const Home = () => {
             </div>
           </article>
           <article className="about-info">
-            <div className="card">
+            <div>
               <div className="card-side card-front">
                 <h2>Property Appreciation</h2>
                 <p>
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </article>
           <article className="about-info">
-            <div className="card">
+            <div>
               <div className="card-side card-front">
                 <h2>Rental Income</h2>
                 <p>
@@ -58,7 +58,7 @@ const Home = () => {
             </div>
           </article>
           <article className="about-info">
-            <div className="card">
+            <div>
               <div className="card-side card-front">
                 <h2>Decentralized Governance</h2>
                 <p>
@@ -131,6 +131,25 @@ const Home = () => {
             with owning property. Blockplot makes it easier we set up the LLC,
             co-ownership legal agreement, and business banking account for you.
           </p>
+        </div>
+      </section>
+      <section className="newsletter">
+        <div className="newsletter-content">
+          <h1 className="newsletter-header section-title">
+            Stay in touch to know when we launch
+          </h1>
+          <div className="underline"></div>
+          <form className="newsletter-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email..."
+              className="form-input"
+            />
+            <button className="form-btn" type="submit">
+              Subscribe
+            </button>
+          </form>
         </div>
       </section>
     </div>

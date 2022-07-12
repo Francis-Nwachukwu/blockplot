@@ -21,17 +21,6 @@ export const links = [
     icon: <FaUserFriends />,
   },
   {
-    id: 3,
-    url: "/properties",
-    text: "properties",
-    icon: <FaFolderOpen />,
-  },
-  {
-    id: 4,
-    url: "/learn",
-    text: "learn",
-  },
-  {
     id: 5,
     url: "/auth",
     text: "Login|SignUp",

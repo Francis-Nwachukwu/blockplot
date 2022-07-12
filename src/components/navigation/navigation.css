@@ -68,7 +68,7 @@ ul {
   }
   .nav-links {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     -webkit-column-gap: 1rem;
     -moz-column-gap: 1rem;

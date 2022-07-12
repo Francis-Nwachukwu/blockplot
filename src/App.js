@@ -7,8 +7,6 @@ import Footer from "./components/footer/footer";
 import Home from "./routes/home";
 import About from "./routes/about";
 import ErrorPage from "./routes/error";
-import Learn from "./routes/learn";
-import PropertyPage from "./routes/properties";
 import Auth from "./routes/authentication";
 
 function App() {
@@ -20,8 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/learn" element={<Learn />} />
-          <Route path="/properties" element={<PropertyPage />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
