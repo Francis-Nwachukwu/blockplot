@@ -19,9 +19,9 @@ const Home = () => {
               into tokenized real estate properties. You earn yields from rents
               and property appreciation.
             </p>
-            <Link to="/about" className="btn hero-btn">
-              About Us
-            </Link>
+            <a href="#newsletter" className="btn hero-btn">
+              Join our waitlist
+            </a>
           </article>
         </div>
       </header>
@@ -90,7 +90,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="newsletter">
+      <section className="newsletter" id="newsletter">
         <div className="newsletter-content">
           <h1 className="newsletter-header section-title">Join our waitlist</h1>
           <div className="underline"></div>

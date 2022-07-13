@@ -80,6 +80,8 @@ Hero
 }
 .hero-btn {
   margin-top: 1.25rem;
+  border: 1px solid orange;
+  border-radius: 0.5rem !important;
 }
 
 /*
