@@ -11,7 +11,7 @@ const NewsletterForm = () => {
         className="form-input"
       />
       <button className="form-btn" type="submit">
-        Subscribe
+        Join
       </button>
     </form>
   );
