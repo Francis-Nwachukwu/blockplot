@@ -1,4 +1,6 @@
 import "../App.css";
+import NewsletterForm from "../components/form/form";
+
 const Auth = () => {
   return (
     <div>
@@ -6,18 +8,10 @@ const Auth = () => {
         <div className="newsletter">
           <div className="newsletter-content">
             <h1 className="newsletter-header section-title">
-              Stay in touch to know when we launch
+              Join our waitlist
             </h1>
             <div className="underline"></div>
-            <form className="newsletter-form">
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                className="form-input"
-              />
-              <button className="form-btn">Subscribe</button>
-            </form>
+            <NewsletterForm />
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import "../App.css";
+import NewsletterForm from "../components/form/form";
 import founderImg from "../assets/Founder img.jpg";
 
 const About = () => {
@@ -34,6 +35,13 @@ const About = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="newsletter">
+        <div className="newsletter-content">
+          <h1 className="newsletter-header section-title">Join waitlist</h1>
+          <div className="underline"></div>
+          <NewsletterForm />
         </div>
       </section>
     </div>

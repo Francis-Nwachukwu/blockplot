@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+
+import { blogData, aboutData } from "../data";
+import NewsletterForm from "../components/form/form";
 import "../App.css";
 
 const Home = () => {
@@ -25,52 +28,19 @@ const Home = () => {
 
       <section className="section about">
         <div className="section-center about-center">
-          <article className="about-info">
-            <div>
-              <div className="card-side card-front">
-                <h2>Cost of Entry</h2>
-                <p>
-                  Get the chance to co-own fractions of real estate properties
-                  by investing a minimum of 100USDT.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article className="about-info">
-            <div>
-              <div className="card-side card-front">
-                <h2>Property Appreciation</h2>
-                <p>
-                  Earn our asset backed tokens in value as property appreciates
-                  year-on-year.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article className="about-info">
-            <div>
-              <div className="card-side card-front">
-                <h2>Rental Income</h2>
-                <p>
-                  Earn rental income and withdraw/sell off whenever you want to.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article className="about-info">
-            <div>
-              <div className="card-side card-front">
-                <h2>Decentralized Governance</h2>
-                <p>
-                  Token holders vote on property decisions through our
-                  governance system. Decisions range from rental increment to
-                  repair requests and more. The majority, 51%, decide on what
-                  should be done & relayed to the property management for
-                  execution.
-                </p>
-              </div>
-            </div>
-          </article>
+          {aboutData.map(({ id, icon, header, paragraph }) => {
+            return (
+              <article className="about-info" key={id}>
+                <div>
+                  <div className="card-side card-front">
+                    {icon}
+                    <h2>{header}</h2>
+                    <p>{paragraph}</p>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 
@@ -84,31 +54,18 @@ const Home = () => {
           <div className="underline"></div>
         </div>
         <div className="section-center blog-center">
-          <article>
-            <div className="card">
-              <div className="card-side card-front">
-                <h2>Unique Tokens</h2>
-                <p>
-                  Ownership of properties is distributed across a finite number
-                  of representative tokens. Based on token share, owners collect
-                  revenue from rent, and vote on property decisions.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article>
-            <div className="card">
-              <div className="card-side card-front">
-                <h2>Property management</h2>
-                <p>
-                  Blockplot Properties have a property management company
-                  managing the property on Token owners behalf. The property
-                  management company sources tenants, collects rent, and manages
-                  repairs, so the diverse group of Token owners do not have to.
-                </p>
-              </div>
-            </div>
-          </article>
+          {blogData.map(({ id, header, paragraph }) => {
+            return (
+              <article key={id}>
+                <div className="card">
+                  <div className="card-side card-front">
+                    <h1>{header}</h1>
+                    <p>{paragraph}</p>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
       <section className="connect">
@@ -135,21 +92,9 @@ const Home = () => {
       </section>
       <section className="newsletter">
         <div className="newsletter-content">
-          <h1 className="newsletter-header section-title">
-            Stay in touch to know when we launch
-          </h1>
+          <h1 className="newsletter-header section-title">Join our waitlist</h1>
           <div className="underline"></div>
-          <form className="newsletter-form">
-            <input
-              type="email"
-              name="email"
-              placeholder="Your email..."
-              className="form-input"
-            />
-            <button className="form-btn" type="submit">
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm />
         </div>
       </section>
     </div>

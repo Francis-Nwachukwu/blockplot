@@ -107,8 +107,13 @@ About
 .about-info {
   align-self: center;
   padding: 10px;
+  margin: 10px 0;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 10px 0px;
+}
+.about-icons {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 .about-info .card {
   height: 17rem;
@@ -212,56 +217,6 @@ About
   clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
 
-/*
-================
-Newsletter 
-================ 
-*/
-.newsletter-content {
-  margin: 10px;
-  text-align: center;
-}
-.newsletter-header {
-  font-weight: bold;
-}
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.form-input {
-  margin: 10px 10px;
-  height: 4rem;
-  padding: 0.25rem 0.5rem;
-  width: 60%;
-  border: 1px solid rgb(152, 102, 8);
-  outline: none;
-  border-radius: 0.6rem;
-}
-.form-input:hover {
-  outline: auto;
-}
-.form-input[placeholder] {
-  font-size: 1.2rem;
-  font-family: "Courier New", Courier, monospace;
-}
-.form-btn {
-  border-radius: 0.25rem;
-  border-color: transparent;
-  padding: 0.25rem 0.5rem;
-  display: block;
-  height: 3rem;
-  /* width: 40%; */
-  text-transform: capitalize;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
-  background: #ffb100;
-  color: black;
-  transition: all 0.3s linear;
-  cursor: pointer;
-}
 /*
 =============== 
 Single Page
