@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { blogData, aboutData } from "../data";
 import NewsletterForm from "../components/form/form";
 import "../App.css";
@@ -19,9 +17,9 @@ const Home = () => {
               into tokenized real estate properties. You earn yields from rents
               and property appreciation.
             </p>
-            <a href="#newsletter" className="btn hero-btn">
-              Join our waitlist
-            </a>
+            <button className="hero-btn">
+              <a href="#newsletter">Join waitlist</a>
+            </button>
           </article>
         </div>
       </header>
@@ -94,6 +92,7 @@ const Home = () => {
         <div className="newsletter-content">
           <h1 className="newsletter-header section-title">Join our waitlist</h1>
           <div className="underline"></div>
+          <h2>Get notified when we launch</h2>
           <NewsletterForm />
         </div>
       </section>

@@ -16,22 +16,13 @@
   }
 }
 .btn {
-  text-transform: uppercase;
-  background: orange !important;
-  padding: 0.375rem 0.75rem;
+  /* 
   letter-spacing: var(--spacing);
   display: inline-block;
-  font-weight: 700 !important;
-  -webkit-transition: var(--transition) !important;
-  transition: var(--transition) !important;
-  font-size: 0.875rem !important;
-  border: 2px solid transparent !important;
-  cursor: pointer !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
 }
 .btn:hover {
-  background: rgba(255, 166, 0, 0.496) !important;
+  /* background: rgba(255, 166, 0, 0.496) !important; */
 }
 .underline {
   width: 5rem;
@@ -79,9 +70,32 @@ Hero
   position: relative;
 }
 .hero-btn {
-  margin-top: 1.25rem;
-  border: 1px solid orange;
-  border-radius: 0.5rem !important;
+  text-transform: uppercase;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  border: 2px solid transparent;
+  background: linear-gradient(
+    to right,
+    rgb(248, 143, 24),
+    rgb(246, 211, 168),
+    rgb(255, 136, 0)
+  ) !important;
+  border-radius: 4rem !important;
+  -webkit-transition: var(--transition) !important;
+  transition: var(--transition) !important;
+}
+.hero-btn:hover {
+  background: linear-gradient(
+    to right,
+    rgb(255, 136, 0),
+    rgb(255, 140, 0),
+    rgb(255, 136, 0)
+  ) !important;
+  -webkit-transition: var(--transition) !important;
+  transition: var(--transition) !important;
 }
 
 /*
@@ -159,7 +173,7 @@ About
   background-color: rgba(255, 166, 0, 0.271) !important;
   -webkit-perspective: 1500px;
   perspective: 1500px;
-  height: 14rem;
+  height: 17rem;
   border-radius: 10px !important;
   padding: 10px;
   margin: 10px 0;

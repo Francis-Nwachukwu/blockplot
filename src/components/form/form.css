@@ -43,8 +43,11 @@ Newsletter
   font-weight: 700;
   letter-spacing: 0.1rem;
   font-size: 1rem;
-  background: #ffb100;
+  background: rgb(254, 192, 77);
   color: black;
   transition: all 0.3s linear;
   cursor: pointer;
+}
+.form-btn:hover {
+  background: orange;
 }

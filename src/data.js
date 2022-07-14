@@ -27,7 +27,7 @@ export const links = [
   {
     id: 5,
     url: "/auth",
-    text: "Join our waitlist",
+    text: "Join waitlist",
   },
 ];
 

@@ -11,6 +11,7 @@ const Auth = () => {
               Join our waitlist
             </h1>
             <div className="underline"></div>
+            <h2>Get notified when we launch</h2>
             <NewsletterForm />
           </div>
         </div>

@@ -39,8 +39,9 @@ const About = () => {
       </section>
       <section className="newsletter">
         <div className="newsletter-content">
-          <h1 className="newsletter-header section-title">Join waitlist</h1>
+          <h1 className="newsletter-header section-title">Join our waitlist</h1>
           <div className="underline"></div>
+          <h2>Get notified when we launch</h2>
           <NewsletterForm />
         </div>
       </section>
