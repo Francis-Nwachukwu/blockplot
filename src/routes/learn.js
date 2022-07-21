@@ -27,9 +27,9 @@ const LearnPage = () => {
               {FAQ.map((item) => {
                 return (
                   <div key={item.id} className="faq-item">
-                    <h2 id={item.question} className="question-details">
+                    <h3 id={item.question} className="question-details">
                       {item.question}
-                    </h2>
+                    </h3>
                     <p className="answer-details">{item.answer}</p>
                   </div>
                 );

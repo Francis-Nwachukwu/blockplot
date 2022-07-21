@@ -142,6 +142,27 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <section className="market section-center">
+        <div className="market-title">
+          <h1>Market Trends</h1>
+        </div>
+        <div className="underline"></div>
+        <div className="market-details">
+          <div className="detail-item">
+            <h1>2022</h1>
+            <p>In 2022, Real Estate in Africa has never been bigger.</p>
+          </div>
+          <div className="detail-item">
+            <h1>$120B+</h1>
+            <p>Estimated Africa Real Estate market size.</p>
+          </div>
+          <div className="detail-item">
+            <h1>5-8%</h1>
+            <p>Average yearly appreciation.</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

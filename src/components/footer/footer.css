@@ -1,15 +1,22 @@
 .footer {
   padding: 10px;
-  background: rgba(255, 166, 0, 0.722);
+  color: orange;
+  /* background: rgba(255, 166, 0, 0.722); */
+  background: rgb(48, 47, 47);
 }
 
 .footer p {
   font-size: 0.8rem;
   text-align: center;
 }
+.footer-info,
+.footer-social-icons {
+  margin: 0 10px;
+}
 .footer-info h4,
 .footer-social-icons h4 {
   font-weight: bold;
+  /* color: orange; */
 }
 .footer-infos {
   display: flex;

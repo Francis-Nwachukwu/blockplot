@@ -33,7 +33,7 @@ const About = () => {
               <img src={founderImg} alt="Founder" />
               <div className="team_card-info">
                 <h2>Nwachukwu Nonso</h2>
-                <h4>Founder & CEO</h4>
+                <h4>Founder</h4>
               </div>
             </div>
           </div>

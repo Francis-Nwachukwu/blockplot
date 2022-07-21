@@ -43,6 +43,7 @@ Hero
 .blog-title h1,
 .connect-title h1,
 .learn-title h1,
+.market-title h1,
 .newsletter-header {
   margin: 5px 0;
 }
@@ -73,7 +74,6 @@ Hero
 .hero-center {
   min-height: calc(100vh - 5rem);
   display: grid;
-  padding-top: 3rem;
   -webkit-box-align: center;
   align-items: center;
   justify-items: center;
@@ -114,7 +114,7 @@ Hero
 }
 .hero-info p {
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  /* line-height: 2.5rem; */
 }
 /* ====================
 Solution
@@ -126,14 +126,10 @@ Solution
 }
 .solution-title h1 {
   font-weight: bolder;
-  font-size: 2rem;
-}
-.solution-title-header h1 {
-  font-size: 2rem;
-  font-weight: bolder;
+  /* font-size: 2rem; */
 }
 .solution-text p {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
 }
 .solution-list {
   /* width: 60vw; */
@@ -173,7 +169,7 @@ About
 }
 .about-title h1 {
   font-weight: bolder;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 .about-center {
   padding: 10px 0;
@@ -204,7 +200,7 @@ About
 }
 .blog-title h1 {
   font-weight: bolder;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 .blog-items {
   width: 300px;
@@ -225,10 +221,10 @@ About
   border-radius: 10px !important;
   padding: 10px;
   margin: 10px 0;
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
 }
 .blog-card h1 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   margin: 0.5rem 0 0;
 }
 .connect {
@@ -237,7 +233,7 @@ About
   margin: 3rem 0;
 }
 .connect-title h1 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: bolder;
 }
 .connect-title h3 {
@@ -271,12 +267,39 @@ About
   /* text-align: center; */
 }
 .newsletter-content p {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   margin: 0 0 1rem;
 }
-.newsletter-header {
-  font-weight: bolder;
-  font-size: 2rem;
+.market {
+  padding: 3rem 1rem;
+  background-color: orange;
+  -webkit-clip-path: polygon(
+    0% 10%,
+    50% 0,
+    100% 10%,
+    100% 90%,
+    50% 100%,
+    0% 90%
+  );
+  clip-path: polygon(0% 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0% 90%);
+}
+.market .underline {
+  background: black;
+}
+.market-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.detail-item {
+  margin: 0 10px;
+}
+.detail-item h1 {
+  padding-left: 10px;
+  border-left: 3px solid black;
+}
+.detail-item p {
+  color: black;
 }
 
 /*
@@ -286,7 +309,7 @@ About Page
 */
 .about-page {
   padding-top: 6rem;
-  min-height: calc(100vh - 61px);
+  /* min-height: calc(100vh - 61px); */
   /* position: absolute; */
 }
 .about-section {
@@ -311,8 +334,8 @@ About Page
   background-size: cover;
 }
 .page-info {
-  font-size: 1.5rem;
-  line-height: 2.4rem;
+  font-size: 1.3rem;
+  /* line-height: 2.4rem; */
 }
 .page-info p {
   color: black;
@@ -415,9 +438,6 @@ Learn Page
 }
 .questions-link:active {
   background: rgb(234, 232, 232);
-}
-.question-details {
-  font-weight: bolder;
 }
 .answer-details {
   color: gray !important;
