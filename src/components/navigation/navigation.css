@@ -19,12 +19,12 @@ ul {
   left: 0;
   background: white;
   /* height: 5rem; */
-  display: grid !important;
+  display: grid;
   -webkit-box-align: center;
   align-items: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  padding: 0.5rem 1.5rem !important;
+  padding: 10px 10px;
   /* margin-bottom: 10rem; */
   z-index: 2;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
