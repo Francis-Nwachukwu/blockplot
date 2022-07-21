@@ -116,6 +116,14 @@ Hero
   font-size: 1.5rem;
   /* line-height: 2.5rem; */
 }
+@media screen and (max-width: 550px) {
+  .hero-info h2 {
+    font-size: 1.5rem;
+  }
+  .hero-info p {
+    font-size: 1rem;
+  }
+}
 /* ====================
 Solution
 ==================== */
@@ -272,7 +280,7 @@ About
 }
 .market {
   padding: 3rem 1rem;
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.271);
   -webkit-clip-path: polygon(
     0% 10%,
     50% 0,
@@ -308,14 +316,13 @@ About Page
 ===============
 */
 .about-page {
-  padding-top: 6rem;
-  /* min-height: calc(100vh - 61px); */
+  padding: 2rem 0;
+  /* min-height: 40vh; */
   /* position: absolute; */
 }
 .about-section {
   position: relative;
   background: rgba(255, 166, 0, 0.045);
-  min-height: 50vh;
 }
 
 .about-bg {
