@@ -71,7 +71,7 @@ Hero
 }
 
 .hero-center {
-  min-height: calc(100vh);
+  min-height: calc(100vh - 61px);
   display: grid;
   -webkit-box-align: center;
   align-items: center;
@@ -79,6 +79,7 @@ Hero
   position: relative;
 }
 .hero-btn {
+  color: black !important;
   text-transform: uppercase;
   cursor: pointer !important;
   font-weight: 600 !important;
@@ -235,6 +236,7 @@ About
   margin: 3rem 0;
 }
 .connect-title h1 {
+  font-size: 2rem;
   font-weight: bolder;
 }
 .connect-title h3 {
@@ -283,6 +285,8 @@ About Page
 */
 .about-page {
   padding-top: 6rem;
+  min-height: calc(100vh - 61px);
+  /* position: absolute; */
 }
 .about-section {
   position: relative;
@@ -367,7 +371,7 @@ About Page
 }
 
 .auth-page {
-  margin-top: 6rem;
+  margin: 2rem 0 0 0;
   min-height: calc(100vh - 61px - 250px);
 }
 
@@ -378,7 +382,7 @@ Learn Page
 */
 
 .learn-page {
-  margin: 6rem 0 2rem 0;
+  margin: 2rem 0 2rem 0;
 }
 .faq {
   display: flex;

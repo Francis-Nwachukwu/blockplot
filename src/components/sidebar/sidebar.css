@@ -59,12 +59,12 @@ Sidebar
 }
 @media screen and (min-width: 380px) {
   .sidebar {
-    width: 300px;
+    width: 250px;
   }
 }
 /* add sidebar links to navbar links */
 .sidebar-links {
-  padding: 0;
+  padding: 0 10px;
 }
 .sidebar-links a {
   display: flex;

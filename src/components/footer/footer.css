@@ -7,6 +7,10 @@
   font-size: 0.8rem;
   text-align: center;
 }
+.footer-info h4,
+.footer-social-icons h4 {
+  font-weight: bold;
+}
 .footer-infos {
   display: flex;
   justify-content: space-around;
