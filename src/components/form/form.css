@@ -5,22 +5,23 @@ Newsletter
 */
 .newsletter-content {
   margin: 10px;
-  text-align: center;
+  /* text-align: center; */
 }
 .newsletter-header {
   font-weight: bold;
 }
 .newsletter-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 .form-input {
-  margin: 10px 10px;
+  margin: 10px 0;
   height: 4rem;
   padding: 0.25rem 0.5rem;
-  width: 60%;
+  width: 80vw;
   border: 1px solid rgb(152, 102, 8);
   outline: none;
   border-radius: 0.6rem;
@@ -36,9 +37,8 @@ Newsletter
   border-radius: 0.25rem;
   border-color: transparent;
   padding: 0.25rem 0.5rem;
-  display: block;
   height: 3rem;
-  width: 15%;
+  width: 20vw;
   text-transform: capitalize;
   font-weight: 700;
   letter-spacing: 0.1rem;

@@ -4,23 +4,25 @@ import founderImg from "../assets/Founder img.jpg";
 
 const About = () => {
   return (
-    <div className="about-page">
-      <section className="section single-page">
+    <div>
+      <section className="about-section">
         <div className="about-bg"></div>
-        <div className="section-title">
-          <h1>About Us</h1>
-          <div className="underline"></div>
-        </div>
-        <div className="section-center page-info">
-          <p>
-            We want to make real estate investing affordable and accessible
-            globally to people of all social class by tokenizing real estate
-            assets. We develop an investment application to reduce the cost of
-            entry and time commitment for property ownership.
-          </p>
+        <div className="section-center about-page">
+          <div className="section-title about-title">
+            <h1>About Us</h1>
+            <div className="underline"></div>
+          </div>
+          <div className="section-center page-info">
+            <p>
+              We want to make real estate investing affordable and accessible
+              globally to people of all social class by tokenizing real estate
+              assets. We develop an investment application to reduce the cost of
+              entry and time commitment for property ownership.
+            </p>
+          </div>
         </div>
       </section>
-      <section className="team">
+      <section className="team section-center">
         <div className="section-title blog-title">
           <h1>Meet Our Team</h1>
           <div className="underline"></div>
@@ -37,11 +39,12 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="newsletter">
+      <section className="newsletter section-center">
+        <hr />
         <div className="newsletter-content">
           <h1 className="newsletter-header section-title">Join our waitlist</h1>
           <div className="underline"></div>
-          <h2>Get notified when we launch</h2>
+          <p>Get notified when we launch.</p>
           <NewsletterForm />
         </div>
       </section>

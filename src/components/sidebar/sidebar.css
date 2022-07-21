@@ -3,70 +3,111 @@
 Sidebar
 ===============
 */
+.root {
+  --spacing: 0.25rem;
+  --transition: all 0.3s linear;
+  --clr-white: #fff;
+  --max-width: 1170px;
+  --radius: 1rem;
+}
+
+.logo {
+  justify-self: center;
+  height: 40px;
+}
+.logo-black {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+}
+.logo-navy {
+  color: rgb(255, 140, 0);
+  font-weight: bolder;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin-top: 10px;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 4;
   width: 100%;
   height: 100%;
-  background: hsl(210, 36%, 96%);
-  /* z-index: 4; */
+  background: hsl(0, 0%, 100%);
   display: grid;
-  place-items: center;
-  -webkit-transition: var(--transition);
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  /* box-shadow: var(--clr-red-dark); */
   transition: var(--transition);
-  /* add later */
-  -webkit-transform: translate(-100%);
   transform: translate(-100%);
 }
 .show-sidebar {
   -webkit-transform: translate(0);
   transform: translate(0);
 }
-.sidebar-links {
-  margin-top: 5rem;
-  text-align: center;
+@media screen and (min-width: 380px) {
+  .sidebar {
+    width: 300px;
+  }
 }
 /* add sidebar links to navbar links */
+.sidebar-links {
+  padding: 0;
+}
 .sidebar-links a {
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   letter-spacing: var(--spacing);
-  display: inline-block;
-  margin-bottom: 1.5rem;
 }
-.sidebar-links a:hover {
-  color: orange !important;
+.sidebar-links a:hover,
+.sidebar-links a:visited,
+.sidebar-links a:active {
+  background: hsl(32, 45%, 94%);
+}
+.sidebar-links a svg {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: var(--transition);
 }
 .social-icons {
-  display: grid;
-  margin-top: 3rem;
-  width: 20rem;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
+  justify-self: center;
+  display: flex;
+  padding-bottom: 2rem;
 }
-.social-icon {
+.social-icon a {
   font-size: 1.5rem;
-  color: orange;
-  -webkit-transition: var(--transition);
+  color: black;
+  margin: 0 1rem;
   transition: var(--transition);
 }
-.social-icon:hover {
-  color: rgb(244, 208, 142);
+.social-icon a:hover {
+  color: rgb(152, 105, 17) !important;
 }
 .close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 0rem;
-  font-size: 3rem;
+  font-size: 1.75rem;
   background: transparent;
-  border: none;
-  -webkit-transition: var(--transition);
+  border-color: transparent;
   transition: var(--transition);
-  color: orange;
   cursor: pointer;
+  color: orange;
+  margin-top: 0.2rem;
 }
 .close-btn:hover {
   color: #e66b6b;

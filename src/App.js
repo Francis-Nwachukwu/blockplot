@@ -8,6 +8,7 @@ import Home from "./routes/home";
 import About from "./routes/about";
 import ErrorPage from "./routes/error";
 import Auth from "./routes/authentication";
+import LearnPage from "./routes/learn";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/learn" element={<LearnPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
 

@@ -1,15 +1,26 @@
 .footer {
-  padding-bottom: 2rem;
-  background: rgba(255, 166, 0, 0.585);
-  display: grid;
-  place-items: center;
+  padding: 10px;
+  background: rgba(255, 166, 0, 0.722);
 }
-.footer .social-icons {
-  margin-bottom: 2rem;
-}
-.footer .social-icon {
-  color: white;
-}
+
 .footer p {
-  font-size: 1.25rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.footer-infos {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-info-list {
+  padding: 0;
+}
+.info-list_item a:hover {
+  font-weight: bold;
+  transition: all 0.3 linear;
+}
+.social-icons {
+  padding: 0;
+}
+.social-icon a:hover {
+  color: rgb(152, 105, 17);
 }

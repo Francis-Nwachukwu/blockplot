@@ -12,31 +12,40 @@ const Sidebar = () => {
       className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
       id="sidebar"
     >
-      <div>
+      <div className="sidebar-header">
+        <span className="logo">
+          <span className="logo-navy">
+            Block<span className="logo-black">plot</span>
+          </span>
+        </span>
+
         <button id="close-btn" className="close-btn" onClick={closeSidebar}>
           <FaTimes />
         </button>
-        <ul className="sidebar-links">
-          {links.map((link) => {
-            const { id, url, text } = link;
-            return (
-              <li key={id}>
-                <a href={url}>{text}</a>
-              </li>
-            );
-          })}
-        </ul>
-        <ul className="social-icons">
-          {social.map((link) => {
-            const { id, url, icon } = link;
-            return (
-              <li key={id}>
-                <a href={url}>{icon}</a>
-              </li>
-            );
-          })}
-        </ul>
       </div>
+      <ul className="sidebar-links">
+        {links.map((link) => {
+          const { id, url, text, icon } = link;
+          return (
+            <li key={id}>
+              <a href={url}>
+                {icon}
+                {text}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+      <ul className="social-icons">
+        {social.map((link) => {
+          const { id, url, icon } = link;
+          return (
+            <li className="social-icon" key={id}>
+              <a href={url}>{icon}</a>
+            </li>
+          );
+        })}
+      </ul>
     </aside>
   );
 };

@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import "./navigation.css";
 import { useGlobalContext } from "../../context";
-import { FaBars } from "react-icons/fa";
+import { FaAlignRight } from "react-icons/fa";
 
 import { links } from "../../data";
 
@@ -19,7 +19,7 @@ const Navigation = () => {
               </span>
             </Link>
             <button className="nav-btn" id="nav-btn" onClick={openSidebar}>
-              <FaBars />
+              <FaAlignRight />
             </button>
           </div>
           <ul className="nav-links">
