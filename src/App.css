@@ -418,36 +418,21 @@ Learn Page
 .faq {
   display: flex;
 }
-.faq-questions {
-  width: 30vw;
-  margin: 0 5px;
-  border-right: 2px dotted black;
-}
 .main-faq {
-  width: 70vw;
   margin: 0 5px;
 }
-.faq-item:first-child h2 {
+.faq-item {
+  width: 80vw;
+  padding: 1rem 1rem;
+  margin: 0 0 1.3rem 0;
+  background-color: rgba(214, 211, 204, 0.193);
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+}
+.item-header h3 {
   margin: 0;
-}
-.questions-link {
-  color: gray !important;
-  display: block;
-  margin: 3rem 0;
-  padding: 10px;
-}
-.questions-link:first-child {
-  margin-top: 0 !important;
-}
-.questions-link:hover {
-  font-weight: bold;
-  color: black !important;
-}
-.questions-link:active {
-  background: rgb(234, 232, 232);
-}
-.answer-details {
-  color: gray !important;
 }
 @media screen and (max-width: 500px) {
   .faq-questions {

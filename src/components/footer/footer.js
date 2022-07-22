@@ -33,9 +33,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
+      <hr />
       <p>
-        <hr />
         Copyright &copy; <span id="date">2022</span> blockplot.co. All rights
         reserved
       </p>

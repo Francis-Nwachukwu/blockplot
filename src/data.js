@@ -157,7 +157,7 @@ export const FAQ = [
   },
   {
     id: 5,
-    question: "How can I cash out my Slice tokens?",
+    question: "How can I cash out my block tokens?",
     answer:
       "In the future, Blockplot will utilize an Automatic Market Maker (AMM) to ensure liquidity is always available on the platform.",
   },

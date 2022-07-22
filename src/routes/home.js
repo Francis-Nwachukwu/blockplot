@@ -1,4 +1,6 @@
 import { FaCheck } from "react-icons/fa";
+import { Animated } from "react-animated-css";
+// import 'animate.css/'
 
 import { blogData, aboutData } from "../data";
 import NewsletterForm from "../components/form/form";
@@ -11,7 +13,12 @@ const Home = () => {
         <div className="section hero-center">
           <div className="hero-container"></div>
           <div className="section-center">
-            <article className="hero-info">
+            <Animated
+              animationIn="slideInUp"
+              animationInDelay={200}
+              isVisible={true}
+              className="hero-info"
+            >
               <div className="underline"></div>
               <h2>Tokenized real estate investment</h2>
               <p>
@@ -23,7 +30,7 @@ const Home = () => {
               <button className="hero-btn">
                 <a href="#newsletter">Join waitlist</a>
               </button>
-            </article>
+            </Animated>
           </div>
         </div>
       </header>
