@@ -110,12 +110,11 @@ const LearnPage = () => {
                 {isOpen2 === true ? (
                   <p className="answer-details">
                     Blockplot is a platform that tokenizes ownership of real
-                    estate assets. You can become a partial holder of commercial
-                    properties by owning blocks of Properties (tokens) on our
-                    platform and receive similar returns as if you owned regular
-                    real estate including but not limited to: rental income,
-                    appreciation of the asset, and a say in the management of
-                    the property.
+                    estate assets. You can become an owner of real estate asset
+                    by owning blocks of Properties (tokens) on our platform and
+                    receive similar returns as if you owned regular real estate
+                    including but not limited to: rental income, appreciation of
+                    the asset, and a say in the management of the property.
                   </p>
                 ) : null}
               </div>
@@ -136,8 +135,8 @@ const LearnPage = () => {
                     property’s owning company to a new LLC. The equities will
                     then be split into the ‘blocks’ (tokens) on the Blockchain.
                     These tokens will solely represent the amount of ownership
-                    you have in the LLC, Which in essence gives you ownership of
-                    the real estate asset.
+                    you have, Which in essence gives you ownership of the real
+                    estate asset.
                   </p>
                 ) : null}
               </div>
@@ -170,9 +169,8 @@ const LearnPage = () => {
 
                 {isOpen5 === true ? (
                   <p className="answer-details">
-                    In the future, Blockplot will utilize an Automatic Market
-                    Maker (AMM) to ensure liquidity is always available on the
-                    platform.
+                    Blockplot will utilize an Automatic Market Maker (AMM) to
+                    ensure liquidity is always available on the platform.
                   </p>
                 ) : null}
               </div>
@@ -200,7 +198,7 @@ const LearnPage = () => {
                   <p className="answer-details">
                     Anyone can participate globally, Just fill out your basic
                     information and start owning! Ownership of tokens makes you
-                    a partner in LLC.
+                    a partner as a retail investor.
                   </p>
                 ) : null}
               </div>
@@ -234,7 +232,8 @@ const LearnPage = () => {
                   <p className="answer-details">
                     For each property, the maximum number of tokens each
                     investor can own is 10%. This limit is in place for
-                    Governance reasons to ensure a fair voting system.
+                    Governance reasons to ensure a fair voting system. This can
+                    be changed in the future.
                   </p>
                 ) : null}
               </div>
@@ -264,25 +263,31 @@ const LearnPage = () => {
                 </div>
 
                 {isOpen11 === true ? (
-                  <p className="answer-details">
-                    All the tokens on Blockplot's platform are backed by real
-                    assets, i.e the physical properties. Therefore, there would
-                    never be an insolvency issue. Furthermore, all the rental
-                    income available is already in the bank accounts of their
-                    respective properties, so rental payouts will always be
-                    solvent and liquid. However, We are using a portion of our
-                    operating cash to provide liquidity for users who may need
-                    liquidity on short notice. The tokens are then re-sold to
-                    new users on the marketplace, replenishing this liquidity
-                    pool. If sell-backs might exceed the normal liquidity pool
-                    we dedicated to token buy-backs, a queue system will be
-                    implemented. It will be operated on a first-come-first-out
-                    basis. As tokens that are purchased back from this queue are
-                    re-sold successfully on the marketplace, the replenished
-                    funds will be used to purchase more sell-backs from users
-                    further down in the queue until the queue ends, or until
-                    sell-back requests return to the normal operating baseline.
-                  </p>
+                  <div>
+                    <p className="answer-details">
+                      Our tokens are backed by real world assets, i.e the
+                      physical properties. Therefore, there would never be an
+                      insolvency issue. Furthermore, all the rental income
+                      available is already in the bank accounts of their
+                      respective properties, so rental payouts will always be
+                      solvent and liquid. However, We are using a portion of our
+                      operating cash to provide liquidity for users who may need
+                      liquidity on short notice.
+                    </p>
+                    <p>
+                      {" "}
+                      The tokens are then re-sold to new users on the
+                      marketplace, replenishing this liquidity pool. If
+                      sell-backs might exceed the normal liquidity pool, a queue
+                      system will be implemented. It will be operated on a
+                      first-come-first-out basis. As tokens that are purchased
+                      back from this queue are re-sold successfully on the
+                      marketplace, the replenished funds will be used to
+                      purchase more sell-backs from users further down in the
+                      queue until the queue ends, or until sell-back requests
+                      return to the normal operating baseline.
+                    </p>
+                  </div>
                 ) : null}
               </div>
 

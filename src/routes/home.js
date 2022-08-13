@@ -22,10 +22,10 @@ const Home = () => {
               <div className="underline"></div>
               <h2>Tokenized real estate investment</h2>
               <p>
-                Blockplot is a decentralized real estate investment platform
-                that lets you co-own real estate assets by investing your
-                fiat/tokens into tokenized real estate properties. You earn
-                yields from rents and property appreciation.
+                At Blockplot, we let you own fractions of real estate as
+                tokenized assets, verifiable on the blockchain. Earn up to 10%
+                yields from rental collection and sell off whenever you want,
+                instantly.
               </p>
               <button className="hero-btn">
                 <a href="#newsletter">Join waitlist</a>
@@ -44,24 +44,35 @@ const Home = () => {
             <div className="underline"></div>
             <div className="solution-text">
               <p>
-                At{" "}
-                <span className="logo-navy">
-                  Block<span className="logo-black">plot</span>
-                </span>
-                , we help users invest in tokenized versions of real estate
+                We help users invest in tokenized versions of real estate
                 assets, creating 3 key benefits:
                 <div className="solution-list">
                   <p className="solution-list__item">
-                    <FaCheck /> Creating liquidity.
+                    <FaCheck />{" "}
+                    <span className="solution-list-bold">
+                      {" "}
+                      Verifiable Ownership.{" "}
+                    </span>{" "}
+                    Our digital real estate assets will be verifiable on the
+                    blockchain.
                   </p>
                   <p className="solution-list__item">
-                    <FaCheck /> Unlocking the equity in the asset.
+                    <FaCheck />{" "}
+                    <span className="solution-list-bold">
+                      {" "}
+                      Provide Liquidity.{" "}
+                    </span>{" "}
+                    We'll Provide liquidity and steady cashflow to a highly
+                    illiquid market such as real estate.
                   </p>
                   <p className="solution-list__item">
-                    <FaCheck /> Promoting ownership for individuals who can now
-                    hold fractions of real estate assets and feel responsible
-                    for its development and management through our decentralized
-                    governance system.
+                    <FaCheck />{" "}
+                    <span className="solution-list-bold">
+                      {" "}
+                      Fractional Ownership.{" "}
+                    </span>{" "}
+                    By tokenizing real world properties, we'll Unlock equities
+                    in real estate assets, making it cheaper to own.
                   </p>
                 </div>
               </p>
@@ -125,17 +136,41 @@ const Home = () => {
             </div>
             <p>
               Tokenizing real estate has become the focus of the real estate
-              market and is likely to continue as Ethereum offers a way to add
-              improved levels of liquidity (tokens) to a notoriously illiquid
-              industry (real estate).
+              market and is likely to continue as the blockchain offers a way to
+              add improved levels of liquidity (tokens) to a notoriously
+              illiquid industry (real estate).
             </p>
             <p>
               Fractional ownership democratizes access to real estate
               investment, and therefore distributes and minimizes the risks and
-              labor involved with owning property. Blockplot makes it easier we
-              set up the LLC, co-ownership legal agreement, and business banking
-              account for you.
+              labor involved with owning property. Blockplot makes it easier as
+              we set up the LLC, co-ownership legal agreement, and business
+              banking account for you.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="market section-center">
+        <div className="market-title">
+          <h1>Market Trends</h1>
+        </div>
+        <div className="underline"></div>
+        <div className="market-details">
+          <div className="detail-item">
+            <h1>$760m</h1>
+            <p>
+              In 2021, cryptocurrency transactions in Africa was over the $100bn
+              mark.
+            </p>
+          </div>
+          <div className="detail-item">
+            <h1>$120B+</h1>
+            <p>Estimated Africa Real Estate market size.</p>
+          </div>
+          <div className="detail-item">
+            <h1>6-12%</h1>
+            <p>Average yearly appreciation.</p>
           </div>
         </div>
       </section>
@@ -149,27 +184,6 @@ const Home = () => {
           </div>
         </section>
       </div>
-
-      <section className="market section-center">
-        <div className="market-title">
-          <h1>Market Trends</h1>
-        </div>
-        <div className="underline"></div>
-        <div className="market-details">
-          <div className="detail-item">
-            <h1>2022</h1>
-            <p>In 2022, Real Estate in Africa has never been bigger.</p>
-          </div>
-          <div className="detail-item">
-            <h1>$120B+</h1>
-            <p>Estimated Africa Real Estate market size.</p>
-          </div>
-          <div className="detail-item">
-            <h1>5-8%</h1>
-            <p>Average yearly appreciation.</p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

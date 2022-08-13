@@ -69,21 +69,21 @@ export const aboutData = [
     icon: <FaCoins className="about-icons" />,
     header: "Use Crypto or Fiat",
     paragraph:
-      "Individuals can invest with 100USDT or sell their tokenized real estate assets in crypto or fiat whenever they want.",
+      "Own tokenized real estate assets by purchasng fractions with stablecoins or your local currency. The number of tokens you own represents the amount of ownership you have in that real estate asset.",
   },
   {
     id: 2,
     icon: <FaCoins className="about-icons" />,
     header: "Low Buy-in Price",
     paragraph:
-      "Each property ownership is divided into blocks of equity, making the cost of entry accessible to anyone.",
+      "Each property ownership is divided into blocks of equity, making the cost of entry cheaper.",
   },
   {
     id: 3,
     icon: <FaMoneyCheckAlt className="about-icons" />,
     header: "Buy or Sell 24/7",
     paragraph:
-      "Instant Liquidity means you can buy or sell blocks off our platform at any time with none of the traditional limitations.",
+      "Instantly swap our security tokens, P2P exchanges will be available to retail investors, and an automatic market maker (AMM), ensuring liquidity is always available on the platform. you can sell off whenever, with none of the traditional limitations.",
   },
   {
     id: 4,
@@ -98,7 +98,7 @@ export const aboutData = [
     icon: <FaCommentDollar className="about-icons" />,
     header: "Rental Payouts",
     paragraph:
-      "Earn dividends in as Rental income is collected from the property management company, and distributed to your wallet address.",
+      "Earn yields as Rental income is collected and distributed to your wallet address.",
   },
   {
     id: 6,
@@ -112,7 +112,7 @@ export const aboutData = [
     icon: <FaBuffer className="about-icons" />,
     header: "Decentralized Governance",
     paragraph:
-      "Token holders vote on property decisions through our governance system. Decisions range from rental increment to repair requests and more. The majority, 51%, decide on what should be done & relayed to the property management for execution.",
+      "Token holders vote on property decisions through our decentralized governance system. Decisions range from rental increment to repair requests and more. The majority, 51%, decide on what should be done & relayed to the property management for execution.",
   },
 ];
 export const blogData = [

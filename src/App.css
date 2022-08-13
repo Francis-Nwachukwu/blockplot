@@ -73,6 +73,8 @@ Hero
 
 .hero-center {
   min-height: calc(100vh - 5rem);
+  /* line-height: 30px; */
+  /* font-size: 4rem; */
   display: grid;
   -webkit-box-align: center;
   align-items: center;
@@ -110,11 +112,11 @@ Hero
 }
 .hero-info h2 {
   font-weight: bold;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 .hero-info p {
-  font-size: 1.5rem;
-  /* line-height: 2.5rem; */
+  /* font-size: 4rem; */
+  line-height: 2.5rem;
 }
 @media screen and (max-width: 550px) {
   .hero-info h2 {
@@ -149,6 +151,9 @@ Solution
   margin: 5px 0;
   display: inline-block;
   padding: 0 10px;
+}
+.solution-list-bold {
+  font-weight: bolder;
 }
 .logo-black {
   font-weight: bolder;
